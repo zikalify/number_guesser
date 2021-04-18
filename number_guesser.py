@@ -17,12 +17,10 @@ while number_found == 0:
 		print ('I guessed your number in ' + str(turns) + ' turns')
 		number_found = 1
 	elif user_input == 'higher' and int(number) < upper_bound:
-		#if int(number) > lower_bound:
-			lower_bound = int(str(number))
-			middle = (upper_bound - lower_bound) / 2
-			number = str(math.ceil(lower_bound + middle))
+		lower_bound = int(str(number))
+		middle = (upper_bound - lower_bound) / 2
+		number = str(math.ceil(lower_bound + middle))
 	elif user_input == 'lower' and int(number) > lower_bound:
-		#if int(number) < upper_bound:
-			upper_bound = int(str(number))
-			middle = (upper_bound - lower_bound) / 2
-			number = str(math.ceil(int(number) - middle))
+		upper_bound = int(str(number))
+		middle = (upper_bound - lower_bound) / 2
+		number = str(math.ceil(int(number) - middle))
